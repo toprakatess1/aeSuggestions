@@ -8,7 +8,6 @@ A basic suggestion bot. I'll do some updates soon.
    ```bash
    pip install -r requirements.txt
 ```
-
 ## Kurulum
 - Python 3.8+ yüklü olmalı.
 - Gerekli kütüphaneleri yükle:
