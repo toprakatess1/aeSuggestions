@@ -13,8 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()  # .env dosyasına tokeninizi girin
 TOKEN = os.getenv("DISCORD_TOKEN")
 
-# Oylama için kullanacağınız kanal id'sini yazın.
-OY_KANALI_ID = 1404119145716514929
+SUGGESTION_CHANNEL_ID = channelid
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -32,7 +31,7 @@ async def on_message(message):
     if message.author.bot:
         return
 
-    if message.channel.id != OY_KANALI_ID:
+    if message.channel.id != SUGGESTION_CHANNEL_ID:
         return
 
     await message.delete()
